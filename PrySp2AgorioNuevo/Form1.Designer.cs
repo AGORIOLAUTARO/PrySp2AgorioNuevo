@@ -40,7 +40,8 @@
             // lblDistancia
             // 
             lblDistancia.AutoSize = true;
-            lblDistancia.Location = new Point(100, 71);
+            lblDistancia.BackColor = Color.White;
+            lblDistancia.Location = new Point(53, 69);
             lblDistancia.Name = "lblDistancia";
             lblDistancia.Size = new Size(70, 20);
             lblDistancia.TabIndex = 0;
@@ -49,7 +50,8 @@
             // lblCantDias
             // 
             lblCantDias.AutoSize = true;
-            lblCantDias.Location = new Point(110, 182);
+            lblCantDias.BackColor = Color.White;
+            lblCantDias.Location = new Point(53, 147);
             lblCantDias.Name = "lblCantDias";
             lblCantDias.Size = new Size(121, 20);
             lblCantDias.TabIndex = 1;
@@ -57,9 +59,9 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(197, 316);
+            btnCancelar.Location = new Point(63, 239);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.Size = new Size(111, 29);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -67,9 +69,9 @@
             // btnCalcular
             // 
             btnCalcular.Enabled = false;
-            btnCalcular.Location = new Point(384, 316);
+            btnCalcular.Location = new Point(197, 239);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(94, 29);
+            btnCalcular.Size = new Size(112, 29);
             btnCalcular.TabIndex = 3;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
@@ -77,7 +79,7 @@
             // 
             // txtDistancia
             // 
-            txtDistancia.Location = new Point(337, 69);
+            txtDistancia.Location = new Point(197, 69);
             txtDistancia.Name = "txtDistancia";
             txtDistancia.Size = new Size(125, 27);
             txtDistancia.TabIndex = 4;
@@ -86,7 +88,7 @@
             // nudCantDias
             // 
             nudCantDias.Enabled = false;
-            nudCantDias.Location = new Point(343, 177);
+            nudCantDias.Location = new Point(197, 145);
             nudCantDias.Name = "nudCantDias";
             nudCantDias.Size = new Size(150, 27);
             nudCantDias.TabIndex = 5;
@@ -96,7 +98,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(192, 255, 255);
+            ClientSize = new Size(393, 344);
             Controls.Add(nudCantDias);
             Controls.Add(txtDistancia);
             Controls.Add(btnCalcular);
@@ -104,7 +107,7 @@
             Controls.Add(lblCantDias);
             Controls.Add(lblDistancia);
             Name = "Form1";
-            Text = "Form1";
+            Text = "frmSP2Agorio";
             ((System.ComponentModel.ISupportInitialize)nudCantDias).EndInit();
             ResumeLayout(false);
             PerformLayout();

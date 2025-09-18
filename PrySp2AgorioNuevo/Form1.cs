@@ -44,17 +44,30 @@ namespace PrySp2AgorioNuevo
             diasEstancia = Convert.ToInt32(nudCantDias.Value);
             Distancia = Convert.ToDouble(txtDistancia.Text.ToString());
 
-            if (diasEstancia > 0)
+            if (Distancia <= 0)
             {
-                disTotal = Distancia * PrecioKm;
-                Precio = disTotal - (disTotal * Descuento);
-                lblPrecioFinal.Text = "El precio final es: $" + Precio.ToString();
+                MessageBox.Show("La distancia debe ser mayor a 0 km.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            if (diasEstancia < 1 || diasEstancia > 30)
             {
-                Precio = Distancia * PrecioKm;
-                lblPrecioFinal.Text = "El precio final es: $" + Precio.ToString();
+                MessageBox.Show("Los días de estancia deben estar entre 1 y 30.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-        }
+
+            disTotal = Distancia * 2;
+            Precio = disTotal * PrecioKm;
+
+            if (Distancia >= 100 && diasEstancia >= 7)
+            {
+                Precio = Precio - (Precio * Descuento);
+            }
+
+            MessageBox.Show($"El precio del boleto es: {Precio} pesos",
+                           "Resultado",
+                           MessageBoxButtons.OK,
+                           MessageBoxIcon.Information);
+        }   
     }
 }
