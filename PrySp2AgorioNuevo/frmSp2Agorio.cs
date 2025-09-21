@@ -1,8 +1,8 @@
 namespace PrySp2AgorioNuevo
 {
-    public partial class Form1 : Form
+    public partial class frmSp2Agorio : Form
     {
-        public Form1()
+        public frmSp2Agorio()
         {
             InitializeComponent();
         }

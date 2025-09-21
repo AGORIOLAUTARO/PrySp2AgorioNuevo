@@ -1,6 +1,6 @@
 ﻿namespace PrySp2AgorioNuevo
 {
-    partial class Form1
+    partial class frmSp2Agorio
     {
         /// <summary>
         ///  Required designer variable.
