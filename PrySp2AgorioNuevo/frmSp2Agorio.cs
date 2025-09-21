@@ -68,6 +68,12 @@ namespace PrySp2AgorioNuevo
                            "Resultado",
                            MessageBoxButtons.OK,
                            MessageBoxIcon.Information);
-        }   
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+        txtDistancia.Text="";
+            nudCantDias.Value=0;
+        }
     }
 }

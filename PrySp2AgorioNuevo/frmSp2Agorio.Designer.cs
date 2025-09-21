@@ -65,6 +65,7 @@
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnCalcular
             // 
@@ -94,7 +95,7 @@
             nudCantDias.TabIndex = 5;
             nudCantDias.ValueChanged += nudCantDias_ValueChanged;
             // 
-            // Form1
+            // frmSp2Agorio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -106,7 +107,7 @@
             Controls.Add(btnCancelar);
             Controls.Add(lblCantDias);
             Controls.Add(lblDistancia);
-            Name = "Form1";
+            Name = "frmSp2Agorio";
             Text = "frmSP2Agorio";
             ((System.ComponentModel.ISupportInitialize)nudCantDias).EndInit();
             ResumeLayout(false);
